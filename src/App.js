@@ -60,6 +60,7 @@ function App() {
             <Route path="/contactus" element={<Contact />}></Route>
             <Route path="/cards" element={<My_cards />}></Route>
             <Route path="/error" element={<Error />}></Route>
+            <Route path="/login" element={<Registration />}></Route>
             {/* <Route path="/navListMenuItems/:type" element={<My_Navbar />}></Route> */}
             {/* <My_carousel />  */}
             {/* <Firstpage /> */}

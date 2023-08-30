@@ -1,5 +1,6 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import Trending_products from "./Trending_products";
+import { Link } from "react-router-dom";
 
 export function My_carousel() {
   return (
@@ -22,31 +23,34 @@ export function My_carousel() {
           )}>
           <div className="relative h-full w-full">
             <img
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
               <div className="w-3/4 text-center md:w-2/4">
                 <Typography
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-                  The Beauty of Nature
+                  Samsung
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
-                  className="mb-12 opacity-80">
-                  It is not so much for its beauty that the forest makes a claim
-                  upon men&apos;s hearts, as for that subtle something, that
-                  quality of air that emanation from old trees, that so
-                  wonderfully changes and renews a weary spirit.
+                  className="mb-12 opacity-90">
+                  It is not just the exquisite design that defines Samsung's
+                  legacy, but the essence of innovation that breathes life into
+                  every creation. The amalgamation of cutting-edge technology
+                  and artistic craftsmanship produces a symphony that transcends
+                  time, reinvigorating weary souls with its enigmatic allure.
                 </Typography>
                 <div className="flex justify-center gap-2">
-                  <Button size="lg" color="white">
-                    Explore
-                  </Button>
+                  <Link to="/cards">
+                    <Button size="lg" color="white">
+                      Explore
+                    </Button>
+                  </Link>
                   <Button size="lg" color="white" variant="text">
                     Gallery
                   </Button>
@@ -56,31 +60,34 @@ export function My_carousel() {
           </div>
           <div className="relative h-full w-full">
             <img
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              src="https://images.unsplash.com/photo-1616353071855-2c045c4458ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
               <div className="w-3/4 text-center md:w-2/4">
                 <Typography
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-                  The Beauty of Nature
+                  Apple
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
-                  className="mb-12 opacity-80">
-                  It is not so much for its beauty that the forest makes a claim
-                  upon men&apos;s hearts, as for that subtle something, that
-                  quality of air that emanation from old trees, that so
-                  wonderfully changes and renews a weary spirit.
+                  className="mb-12 opacity-90">
+                  It is not just the aesthetic allure that defines Apple's
+                  essence, but the marriage of innovation and sophistication
+                  that breathes life into every creation. The fusion of
+                  cutting-edge technology and timeless design yields a symphony
+                  that rejuvenates weary souls with its ethereal charm.
                 </Typography>
                 <div className="flex justify-center gap-2">
-                  <Button size="lg" color="white">
-                    Explore
-                  </Button>
+                  <Link to="/cards">
+                    <Button size="lg" color="white">
+                      Explore
+                    </Button>
+                  </Link>
                   <Button size="lg" color="white" variant="text">
                     Gallery
                   </Button>
@@ -90,31 +97,35 @@ export function My_carousel() {
           </div>
           <div className="relative h-full w-full">
             <img
-              src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+              src="https://images.unsplash.com/photo-1659080382102-176e51b4f5f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/60">
               <div className="w-3/4 text-center md:w-2/4">
                 <Typography
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-                  The Beauty of Nature
+                  Google Pixel
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
-                  className="mb-12 opacity-80">
-                  It is not so much for its beauty that the forest makes a claim
-                  upon men&apos;s hearts, as for that subtle something, that
-                  quality of air that emanation from old trees, that so
-                  wonderfully changes and renews a weary spirit.
+                  className="mb-12 opacity-90">
+                  It is not merely the visual splendor that distinguishes Google
+                  Pixel, but the fusion of innovation and creativity that
+                  breathes vitality into every creation. The harmonious blend of
+                  state-of-the-art technology and artistic finesse weaves a
+                  tapestry that revitalizes weary souls with its captivating
+                  allure.
                 </Typography>
                 <div className="flex justify-center gap-2">
-                  <Button size="lg" color="white">
-                    Explore
-                  </Button>
+                  <Link to="/cards">
+                    <Button size="lg" color="white">
+                      Explore
+                    </Button>
+                  </Link>
                   <Button size="lg" color="white" variant="text">
                     Gallery
                   </Button>
