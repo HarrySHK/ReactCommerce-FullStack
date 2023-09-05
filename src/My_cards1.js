@@ -1,27 +1,27 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
-import Iphone_Mobile_Data from "./Apple_mobile_data";
-import My_Footer from "./footer";
-import My_Navbar from "./navbar";
-import Searchbar from "./Searchbar";
-import pic1 from "./Iphone_Data/Iphone_Data/pic1.jpg";
-import pic2 from "./Iphone_Data/Iphone_Data/pic2.jpg";
-import pic3 from "./Iphone_Data/Iphone_Data/pic3.jpg";
-import pic4 from "./Iphone_Data/Iphone_Data/pic4.jpg";
-import pic5 from "./Iphone_Data/Iphone_Data/pic5.jpg";
-import pic6 from "./Iphone_Data/Iphone_Data/pic6.jpg";
+import { useParams, Link } from "react-router-dom";
+import My_Footer1 from "./footer1";
+import My_Navbar1 from "./navbar1";
+import Searchbar1 from "./Searchbar1";
+import Dell_Laptop_Data from "./Dell_laptop_data";
+import pica from "./Dell_Data/pic0.png";
+import picb from "./Dell_Data/pic1.jpg";
+import picc from "./Dell_Data/pic2.jpg";
+import picd from "./Dell_Data/pic3.png";
+import pice from "./Dell_Data/pic4.jpeg";
+import picf from "./Dell_Data/pic5.jpg";
 
-function My_cards() {
-  const selectedData0 = Iphone_Mobile_Data[0];
-  const selectedData1 = Iphone_Mobile_Data[1];
-  const selectedData2 = Iphone_Mobile_Data[2];
-  const selectedData3 = Iphone_Mobile_Data[3];
-  const selectedData4 = Iphone_Mobile_Data[4];
-  const selectedData5 = Iphone_Mobile_Data[5];
+function My_cards1() {
+  const selectedData0 = Dell_Laptop_Data[0];
+  const selectedData1 = Dell_Laptop_Data[1];
+  const selectedData2 = Dell_Laptop_Data[2];
+  const selectedData3 = Dell_Laptop_Data[3];
+  const selectedData4 = Dell_Laptop_Data[4];
+  const selectedData5 = Dell_Laptop_Data[5];
 
   const { category } = useParams();
   let data;
-  if (category === "Apple") {
+  if (category === "Dell") {
     data = [
       {
         imageUrl: selectedData0.imageUrl,
@@ -82,8 +82,8 @@ function My_cards() {
 
   return (
     <>
-      <My_Navbar />
-      <Searchbar />
+      <My_Navbar1 />
+      <Searchbar1 />
       <div className="grid grid-cols-1 gap-6 px-12 mt-4 bg-white md:grid-cols-3 sm:grid-cols-2 md:mt-4 sm:px-6 sm:mt-4">
         {data.map((card, index) => (
           <div
@@ -121,7 +121,7 @@ function My_cards() {
                       {/* <Link to={`/data/${index}`}> */}
 
                       <Link
-                        to={`/product/mobile/${index}`}
+                        to={`/product/laptop/${index}`}
                         className="px-4 py-2 mt-[-24px] text-center text-white bg-blue-500 rounded  w-3/3"
                         onClick={() => localStorage.setItem("myDataKey", index)}
 
@@ -138,9 +138,9 @@ function My_cards() {
           </div>
         ))}
       </div>
-      <My_Footer />
+      <My_Footer1 />
     </>
   );
 }
 
-export default My_cards;
+export default My_cards1;

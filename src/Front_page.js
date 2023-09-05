@@ -4,22 +4,47 @@ import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 import Myimg from "./bg.jpg";
 import { Link } from "react-router-dom";
 import Brand_Nav from "./Brand_Nav";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import gsap from "gsap";
+import { useAuth0 } from "@auth0/auth0-react";
+import { Alert } from "@material-tailwind/react";
+import { CheckCircleIcon } from "@heroicons/react/solid";
 
 function Front_page() {
-  const { setBrandType } = Brand_Nav(); // Call the function to get the context values
+  const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
+  const [showAlert, setShowAlert] = useState(false);
 
-  const handleMobileClick = () => {
-    setBrandType("mobile");
-  };
+  useEffect(() => {
+    const alertShown = localStorage.getItem("alertShown");
 
-  const handleLaptopClick = () => {
-    setBrandType("laptop");
-  };
+    if (!alertShown && isAuthenticated) {
+      setShowAlert(true);
 
+      // Set the flag when the alert is shown
+      localStorage.setItem("alertShown", "true");
+
+      // Hide the alert after 10 seconds
+      setTimeout(() => {
+        setShowAlert(false);
+      }, 5000);
+    }
+  }, [isAuthenticated]);
   return (
     <div className="front_page" style={frontPageStyle}>
+      {showAlert && (
+        <Alert
+          animate={{
+            mount: { y: 0 },
+            unmount: { y: 100 },
+          }}>
+          <img
+            className="h-6 w-6 cursor-pointer"
+            src={user.picture}
+            alt={user.name}
+          />
+          Thank you, {user.name} you are successfully logged in check ✅
+        </Alert>
+      )}
       <section className="mt-12 lg:mt-24">
         <div
           className="bg-black/75 text-white -skew-y-1 border-t-4 border-b-4 border-white/60"
@@ -37,10 +62,9 @@ function Front_page() {
 
                   <div className="flex justify-center space-x-24 mt-6">
                     <Link
-                      to="/home"
+                      to="/home/mobile"
                       className="border-b border-white p-3 px-6 border-2 text-center flex flex-col items-center hover:font-bold hover:bg-white hover:text-black"
-                      style={categoryLinkStyle}
-                      onClick={handleMobileClick}>
+                      style={categoryLinkStyle}>
                       <FontAwesomeIcon
                         icon={faMobileAlt}
                         className="mr-2"
@@ -49,10 +73,9 @@ function Front_page() {
                       <span className="text-xl "> Mobile </span>
                     </Link>
                     <a
-                      href="/home"
+                      href="/home/laptop"
                       className="p-3 px-6 pb-2 border-2 border-b border-white hover:bg-white hover:text-black hover:font-bold"
-                      style={categoryLinkStyle}
-                      onClick={handleLaptopClick}>
+                      style={categoryLinkStyle}>
                       <FontAwesomeIcon
                         icon={faLaptop}
                         className="mr-2"

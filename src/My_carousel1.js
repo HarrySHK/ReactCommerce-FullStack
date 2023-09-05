@@ -1,15 +1,16 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 import Trending_products from "./Trending_products";
 import { Link } from "react-router-dom";
-import My_Navbar from "./navbar";
-import Searchbar from "./Searchbar";
-import My_Footer from "./footer";
+import My_Navbar1 from "./navbar1";
+import Searchbar1 from "./Searchbar1";
+import My_Footer1 from "./footer1";
+import Trending_products1 from "./Trending_products1";
 
-export function My_carousel() {
+function My_carousel1() {
   return (
     <>
-      <My_Navbar />
-      <Searchbar />
+      <My_Navbar1 />
+      <Searchbar1 />
       <div className="flex justify-center items-center">
         <Carousel
           className="rounded-xl w-[1400px] h-[500px]"
@@ -28,7 +29,7 @@ export function My_carousel() {
           )}>
           <div className="relative h-full w-full">
             <img
-              src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+              src="https://images.unsplash.com/photo-1558864559-ed673ba3610b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
             />
@@ -38,17 +39,16 @@ export function My_carousel() {
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-                  Samsung
+                  Apple
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
                   className="mb-12 opacity-90">
-                  It is not just the exquisite design that defines Samsung's
-                  legacy, but the essence of innovation that breathes life into
-                  every creation. The amalgamation of cutting-edge technology
-                  and artistic craftsmanship produces a symphony that transcends
-                  time, reinvigorating weary souls with its enigmatic allure.
+                  Apple laptops, known for their premium design and M1
+                  chip-powered performance, offer a seamless macOS experience.
+                  Their longevity justifies the investment, making them a choice
+                  for discerning users.
                 </Typography>
                 <div className="flex justify-center gap-2">
                   {/* <Link to="/cards"> */}
@@ -65,7 +65,7 @@ export function My_carousel() {
           </div>
           <div className="relative h-full w-full">
             <img
-              src="https://images.unsplash.com/photo-1616353071855-2c045c4458ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
             />
@@ -75,20 +75,18 @@ export function My_carousel() {
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-                  Apple
+                  DELL
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
                   className="mb-12 opacity-90">
-                  It is not just the aesthetic allure that defines Apple's
-                  essence, but the marriage of innovation and sophistication
-                  that breathes life into every creation. The fusion of
-                  cutting-edge technology and timeless design yields a symphony
-                  that rejuvenates weary souls with its ethereal charm.
+                  Dell laptops cater to various budgets and needs, offering
+                  durability, customization, and reliable performance. Strong
+                  support services add to their appeal, ensuring peace of mind.
                 </Typography>
                 <div className="flex justify-center gap-2">
-                  <Link to="/cards/laptop/Apple">
+                  <Link to="/cards/laptop/Dell">
                     <Button size="lg" color="white">
                       Explore
                     </Button>
@@ -102,7 +100,7 @@ export function My_carousel() {
           </div>
           <div className="relative h-full w-full">
             <img
-              src="https://images.unsplash.com/photo-1659080382102-176e51b4f5f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
               alt="image 1"
               className="h-full w-full object-cover"
             />
@@ -112,18 +110,16 @@ export function My_carousel() {
                   variant="h1"
                   color="white"
                   className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-                  Google Pixel
+                  HP
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
                   className="mb-12 opacity-90">
-                  It is not merely the visual splendor that distinguishes Google
-                  Pixel, but the fusion of innovation and creativity that
-                  breathes vitality into every creation. The harmonious blend of
-                  state-of-the-art technology and artistic finesse weaves a
-                  tapestry that revitalizes weary souls with its captivating
-                  allure.
+                  HP laptops balance affordability with reliability, offering a
+                  range of configurations for diverse users. Their innovations
+                  in design and extended battery life provide versatility and
+                  productivity, making them suitable for various lifestyles.
                 </Typography>
                 <div className="flex justify-center gap-2">
                   {/* <Link to="/cards"> */}
@@ -140,8 +136,10 @@ export function My_carousel() {
           </div>
         </Carousel>
       </div>
-      <Trending_products />
-      <My_Footer />
+      <Trending_products1 />
+      <My_Footer1 />
     </>
   );
 }
+
+export default My_carousel1;

@@ -1,8 +1,8 @@
 // import "./registration.css";
 import styled from "styled-components";
-import My_Navbar from "./navbar";
-import Searchbar from "./Searchbar";
-import My_Footer from "./footer";
+import My_Navbar1 from "./navbar1";
+import Searchbar1 from "./Searchbar1";
+import My_Footer1 from "./footer1";
 
 const RegistrationWrapper = styled.div`
   // @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
@@ -319,11 +319,11 @@ const RegistrationWrapper = styled.div`
   }
 `;
 
-function Registration() {
+function Registration1() {
   return (
     <>
-      <My_Navbar />
-      <Searchbar />
+      <My_Navbar1 />
+      <Searchbar1 />
       <RegistrationWrapper className="main_div bg-white">
         <div class="section">
           <div class="container">
@@ -447,9 +447,9 @@ function Registration() {
           </div>
         </div>
       </RegistrationWrapper>
-      <My_Footer />
+      <My_Footer1 />
     </>
   );
 }
 
-export default Registration;
+export default Registration1;

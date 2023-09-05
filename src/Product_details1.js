@@ -1,26 +1,14 @@
 import React, { useState } from "react";
 import { HeartIcon, ShoppingBagIcon } from "@heroicons/react/solid";
-import Iphone_Mobile_Data from "./Apple_mobile_data";
-import My_Navbar from "./navbar";
-import Searchbar from "./Searchbar";
-import My_Footer from "./footer";
-import { useStateContext } from "./StateContext";
+import Dell_Laptop_Data from "./Dell_laptop_data";
+import My_Footer1 from "./footer1";
+import My_Navbar1 from "./navbar1";
+import Searchbar1 from "./Searchbar1";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Alert } from "@material-tailwind/react";
+import { useStateContext } from "./StateContext";
 
-function Product_details() {
-  // const [quantity, setQuantity] = useState(1);
-
-  // const handleIncrement = () => {
-  //   setQuantity(quantity + 1);
-  // };
-
-  // const handleDecrement = () => {
-  //   if (quantity > 1) {
-  //     setQuantity(quantity - 1);
-  //   }
-  // };
-
+function Product_details1() {
   const { user, isAuthenticated } = useAuth0();
 
   const { decQty, incQty, qty, onAdd } = useStateContext();
@@ -29,7 +17,7 @@ function Product_details() {
 
   console.log(receivedData);
 
-  const selectedData = Iphone_Mobile_Data[receivedData];
+  const selectedData = Dell_Laptop_Data[receivedData];
 
   const product = {
     name: selectedData.name,
@@ -39,10 +27,10 @@ function Product_details() {
     hrefReviews: "#link",
     description: selectedData.description,
     features: [
-      { name: "Resolution", details: selectedData.Resolution },
-      { name: "Memory", details: selectedData.Memory },
-      { name: "Camera", details: selectedData.Camera },
-      { name: "Battery", details: selectedData.Battery },
+      { name: "DisplaySize", details: selectedData.displaySize },
+      { name: "Processor", details: selectedData.processor },
+      { name: "Graphics", details: selectedData.graphics },
+      { name: "Battery", details: selectedData.battery },
     ],
     colors: [
       { name: "Black", class: "bg-black" },
@@ -79,7 +67,6 @@ function Product_details() {
   const starsNumber = Math.floor(product.rating);
   const isHalfStar = !Number.isInteger(product.rating);
   const emptyStars = 5 - Math.ceil(product.rating);
-
   const [showAlert, setShowAlert] = useState(false); // State to control whether to show the alert
   const handleClick = () => {
     if (isAuthenticated) {
@@ -93,7 +80,6 @@ function Product_details() {
       }, 5000);
     }
   };
-
   return (
     <>
       {showAlert && (
@@ -106,8 +92,8 @@ function Product_details() {
           Login required!
         </Alert>
       )}
-      <My_Navbar />
-      <Searchbar />
+      <My_Navbar1 />
+      <Searchbar1 />
       <div className="main">
         <div className="w-full px-4 mx-auto text-black bg-white max-w-7xl">
           <div className="flex flex-col lg:flex-row">
@@ -304,9 +290,9 @@ function Product_details() {
           </div>
         </div>
       </div>
-      <My_Footer />
+      <My_Footer1 />
     </>
   );
 }
 
-export default Product_details;
+export default Product_details1;

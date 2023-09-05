@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import Myimg from "./logo.png";
-
+import Product_cart from "./Product_cart";
 import {
   Navbar,
   Collapse,
@@ -16,6 +16,7 @@ import {
   MenuItem,
   Chip,
   Avatar,
+  Spinner,
 } from "@material-tailwind/react";
 import {
   ChevronDownIcon,
@@ -38,11 +39,11 @@ import {
   QuestionMarkCircleIcon,
   LogoutIcon,
   AtSymbolIcon,
+  DesktopComputerIcon,
 } from "@heroicons/react/outline";
 import { Link, useLocation, useParams } from "react-router-dom";
 import Brand_Nav from "./Brand_Nav";
 import { useStateContext } from "./StateContext";
-import Product_cart from "./Product_cart";
 
 const colors = {
   blue: "bg-blue-50 text-blue-500",
@@ -151,22 +152,22 @@ function NavListMenu() {
   const navListMenuItems = [
     {
       color: "blue",
-      icon: DeviceMobileIcon,
+      icon: DesktopComputerIcon,
       title: "Apple",
-      description: "Experience innovation with Apple devices.",
+      description: "Seamless blend of innovation and aesthetics in laptops.",
     },
     {
       color: "orange",
-      icon: DeviceMobileIcon,
-      title: "Samsung",
-      description: "Discover the latest Samsung technologies.",
+      icon: DesktopComputerIcon,
+      title: "Dell",
+      description: "Reliable and versatile laptops catering to diverse needs.",
     },
     {
       color: "green",
-      icon: DeviceMobileIcon,
+      icon: DesktopComputerIcon,
       title: (
         <div className="flex items-center gap-1">
-          Google Pixel{" "}
+          Toshiba{" "}
           <Chip
             size="sm"
             color="green"
@@ -176,37 +177,38 @@ function NavListMenu() {
           />
         </div>
       ),
-      description: "Explore the world of Google Pixel products and services.",
+      description: "Innovative laptops with a balance of performance and style",
     },
     {
       color: "blue-gray",
-      icon: DeviceMobileIcon,
-      title: "Huawei",
-      description: "Empowering the future with Huawei technologies.",
+      icon: DesktopComputerIcon,
+      title: "HP",
+      description: "Performance and innovation in one package.",
     },
     {
       color: "purple",
-      icon: DeviceMobileIcon,
-      title: "OnePlus",
-      description: "Never settle with OnePlus flagship devices.",
+      icon: DesktopComputerIcon,
+      title: "Lenovo",
+      description: "Smart, reliable, and stylish computing solutions.",
     },
     {
       color: "teal",
-      icon: DeviceMobileIcon,
-      title: "Xiaomi",
-      description: "Smart living with Xiaomi's range of products.",
+      icon: DesktopComputerIcon,
+      title: "ASUS",
+      description: "Innovative technology for every need",
     },
     {
       color: "cyan",
-      icon: DeviceMobileIcon,
-      title: "Motorola",
-      description: "Unleash the possibilities with Motorola.",
+      icon: DesktopComputerIcon,
+      title: "Acer",
+      description: "Affordable and reliable computing solutions",
     },
     {
       color: "pink",
-      icon: DeviceMobileIcon,
-      title: "Realme",
-      description: "Connecting people with Realme's innovative solutions.",
+      icon: DesktopComputerIcon,
+      title: "LG",
+      description:
+        "Sleek design and reliable performance for various computing needs",
     },
   ];
 
@@ -215,7 +217,7 @@ function NavListMenu() {
 
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, color }, key) => (
-      <a href={`/cards/mobile/${title}`} key={key}>
+      <a href={`/cards/laptop/${title}`} key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg">
           <div className={`rounded-lg p-5 ${colors[color]}`}>
             {React.createElement(icon, {
@@ -313,7 +315,7 @@ function NavList() {
       <button className="mx-5 group relative px-5 py-2.5 inline-block text-base text-purple-800 font-medium tracking-wide active:top-0.5 active:outline-none focus:outline-none">
         <Typography
           as="a"
-          href="/home/mobile"
+          href="/home/laptop"
           variant="small"
           color="white"
           className="hover:text-black hover:font-bold block translate-3d-14 group-hover:translate-3d-h-14 font-normal">
@@ -347,7 +349,7 @@ function NavList() {
       <button className="mx-5 group relative px-5 py-2.5 inline-block text-base text-purple-800 font-medium tracking-wide active:top-0.5 active:outline-none focus:outline-none">
         <Typography
           as="a"
-          href="/aboutus/mobile"
+          href="/aboutus/laptop"
           variant="small"
           color="white"
           className="hover:text-black hover:font-bold block translate-3d-14 group-hover:translate-3d-h-14 font-normal">
@@ -380,7 +382,7 @@ function NavList() {
       <button className="mx-5 group relative px-5 py-2.5 inline-block text-base text-purple-800 font-medium tracking-wide active:top-0.5 active:outline-none focus:outline-none">
         <Typography
           as="a"
-          href="/contactus/mobile"
+          href="/contactus/laptop"
           variant="small"
           color="white"
           className="hover:text-black hover:font-bold block translate-3d-14 group-hover:translate-3d-h-14 font-normal">
@@ -414,10 +416,9 @@ function NavList() {
   );
 }
 
-export default function My_Navbar() {
+export default function My_Navbar1() {
   const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
   const { showCart, setShowCart, totalQuantities } = useStateContext();
-
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -439,7 +440,7 @@ export default function My_Navbar() {
           <Typography
             color="white"
             as="a"
-            href="/home/mobile"
+            href="/home/laptop"
             variant="h6"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2">
             <img className="h-8" src={Myimg} alt="logo" />

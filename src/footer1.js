@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-export default function My_Footer() {
-  
+export default function My_Footer1() {
   return (
     <section style={{ backgroundColor: "#000d1a" }}>
       <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">

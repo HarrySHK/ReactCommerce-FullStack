@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { MailIcon } from "@heroicons/react/outline";
-import My_Footer1 from "./footer1";
 import My_Navbar1 from "./navbar1";
 import Searchbar1 from "./Searchbar1";
-import My_Navbar from "./navbar";
-import Searchbar from "./Searchbar";
-import My_Footer from "./footer";
+import My_Footer1 from "./footer1";
 import { useAuth0 } from "@auth0/auth0-react";
 
-function Contact() {
+function Contact1() {
   const { user, isAuthenticated } = useAuth0();
   const [contact_name, setContact_Name] = useState("");
   const [contact_email, setContact_Email] = useState("");
@@ -51,8 +48,8 @@ function Contact() {
   };
   return (
     <>
-      <My_Navbar />
-      <Searchbar />
+      <My_Navbar1 />
+      <Searchbar1 />
       <div style={{ backgroundColor: "#121821" }} className="mb-12">
         <div className="relative w-full mx-auto text-white-700 max-w-7xl">
           <div className="grid grid-cols-2">
@@ -84,7 +81,11 @@ function Contact() {
                   </label>
                   {/* :::input */}
                   <input
-                    onChange={(e) => setContact_Name(e.target.value)}
+                    onChange={(e) =>
+                      isAuthenticated
+                        ? setContact_Name(user.name)
+                        : setContact_Name(e.target.value)
+                    }
                     type="text"
                     id="name"
                     name="name"
@@ -101,7 +102,11 @@ function Contact() {
                   </label>
                   {/* :::input */}
                   <input
-                    onChange={(e) => setContact_Email(e.target.value)}
+                    onChange={(e) =>
+                      isAuthenticated
+                        ? setContact_Email(user.email)
+                        : setContact_Email(e.target.value)
+                    }
                     type="email"
                     id="email"
                     name="email"
@@ -215,9 +220,9 @@ function Contact() {
           </div>
         </div>
       </div>
-      <My_Footer />
+      <My_Footer1 />
     </>
   );
 }
 
-export default Contact;
+export default Contact1;

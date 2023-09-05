@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-function Searchbar() {
+function Searchbar1() {
   return (
     <div className="search -mt-6 mb-4">
       <form class="border-4 border-black mt-10 mx-auto max-w-xs md:max-w-xl sm:max-w-md py-2 px-6 rounded-full bg-gray-50 flex focus-within:border-gray-300">
@@ -19,4 +19,4 @@ function Searchbar() {
   );
 }
 
-export default Searchbar;
+export default Searchbar1;
