@@ -245,13 +245,12 @@ function Product_details() {
               <div className="flex flex-wrap items-center justify-around order-2 pt-8 border-b-2 border-r-200 lg:order-3 sm:px-6 lg:flex-nowrap lg:border-none">
                 {/* :::Price */}
                 <span className="m-2.5 text-4xl text-black font-extrabold text-opacity-70">
-                  <span className="font-normal"></span>
-                  ${product.price}
+                  <span className="font-normal"></span>${product.price}
                 </span>
                 {/* :::Add to cart button */}
                 <button
                   type="button"
-                  className="m-2.5 py-1.5 px-5 inline-flex items-center rounded-md bg-gray-900 text-base text-white font-semibold uppercase whitespace-nowrap hover:bg-gray-500 hover:text-black hover:text-opacity-70 hover:border-black hover:border-2 hover:border-opacity-40"
+                  className="m-2.5 py-1.5 px-5 inline-flex items-center rounded-md bg-gray-900 text-base text-white font-semibold uppercase whitespace-nowrap hover:bg-blue-100 hover:text-black hover:border-black hover:border-4"
                   onClick={handleClick}>
                   <ShoppingBagIcon className="w-6 h-6 mr-3" />
                   Add to cart
