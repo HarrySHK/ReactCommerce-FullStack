@@ -88,7 +88,7 @@ function Contact() {
                     type="text"
                     id="name"
                     name="name"
-                    value={isAuthenticated ? user.name : ""}
+                    value={isAuthenticated ? user.name : contact_name}
                     placeholder="Enter Your Name here"
                     className="block w-full p-2 pt-2 pl-3 text-base placeholder-gray-400 bg-gray-100 border-gray-300 rounded shadow-sm text-black/80 form-input focus:border-green-400 focus:ring-1 focus:ring-green-400"
                   />
@@ -106,7 +106,7 @@ function Contact() {
                     id="email"
                     name="email"
                     placeholder="Email Address"
-                    value={isAuthenticated ? user.email : ""}
+                    value={isAuthenticated ? user.email : contact_email}
                     className="block w-full p-2 pt-2 pl-3 text-base placeholder-gray-400 bg-gray-100 border-gray-300 rounded shadow-sm text-black/80 form-input focus:border-green-400 focus:ring-1 focus:ring-green-400"
                   />
                 </div>
@@ -129,8 +129,17 @@ function Contact() {
                 {/* ::Submit Button */}
                 <div>
                   <button
+                    onClick={() => {
+                      if (isAuthenticated) {
+                        setContact_Name(user.name);
+                        setContact_Email(user.email);
+                      } else {
+                        setContact_Name(contact_name);
+                        setContact_Email(contact_email);
+                      }
+                    }}
                     type="submit"
-                    className="border-none px-6 py-2 text-base font-semibold text-white uppercase bg-blue-400 border-2 rounded border-white/40 bg-opacity-70 hover:bg-blue-500 hover:bg-opacity-70 hover:text-black hover:border-4 hover:border-black">
+                    className="hover:text-blue-900 border-none px-6 py-2 text-base font-semibold text-black uppercase bg-gradient-to-br from-blue-100 to-white rounded-full ">
                     Send Message
                   </button>
                 </div>

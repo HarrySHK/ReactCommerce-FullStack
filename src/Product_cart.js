@@ -224,7 +224,9 @@ const Product_cart = () => {
           onClick={() => setShowCart(false)}>
           <AiOutlineLeft />
           <span className="heading">Your Cart</span>
-          <span className="cart-num-items">({totalQuantities} items)</span>
+          <span className=" cart-num-items text-blue-100">
+            ({totalQuantities} items)
+          </span>
         </button>
 
         {cartItems.length < 1 && (
@@ -235,7 +237,7 @@ const Product_cart = () => {
               <button
                 type="button"
                 onClick={() => setShowCart(false)}
-                className="hover:bg-black hover:text-white btn">
+                className=" hover:bg-black hover:text-blue-100 btn">
                 Continue Shopping
               </button>
             </Link>
@@ -294,19 +296,22 @@ const Product_cart = () => {
             <div className="btn-container">
               <button
                 type="button"
-                className="hover:bg-black hover:text-white btn"
+                className="hover:bg-black hover:text-blue-100 btn"
                 onClick={handleOpen}>
                 Place your order
               </button>
               <Dialog
+                className="shadow-lg shadow-gray-900 bg-black/40"
                 open={open}
                 handler={handleOpen}
                 animate={{
                   mount: { scale: 1, y: 0 },
                   unmount: { scale: 0.9, y: -100 },
                 }}>
-                <DialogHeader>Thankyou! {user.name}</DialogHeader>
-                <DialogBody divider>
+                <DialogHeader className="text-blue-100">
+                  Thankyou! {user.name}
+                </DialogHeader>
+                <DialogBody divider className="text-white">
                   Your order has been placed successfully, igniting the
                   excitement! 🚀 Anticipate a confirmation email dancing into
                   your inbox shortly. 📩 We're thrilled to have you as a part of

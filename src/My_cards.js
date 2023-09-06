@@ -84,7 +84,7 @@ function My_cards() {
     <>
       <My_Navbar />
       <Searchbar />
-      <div className="grid grid-cols-1 gap-6 px-12 mt-4 bg-white md:grid-cols-3 sm:grid-cols-2 md:mt-4 sm:px-6 sm:mt-4">
+      <div className="grid grid-cols-1 gap-6 px-12 mt-7 mb-16 bg-white md:grid-cols-3 sm:grid-cols-2 md:mt-7 sm:px-6 sm:mt-7">
         {data.map((card, index) => (
           <div
             key={index}
@@ -121,8 +121,9 @@ function My_cards() {
                       {/* <Link to={`/data/${index}`}> */}
 
                       <Link
+                        style={{ backgroundColor: "#000d1a" }}
                         to={`/product/mobile/${index}`}
-                        className="px-4 py-2 mt-[-24px] text-center text-white bg-blue-500 rounded  w-3/3"
+                        className="hover:text-black hover:font-bold hover:bg-gradient-to-br hover:from-blue-100 hover:to-white shadow-lg px-4 py-2 mt-[-24px] text-center text-white bg-blue-500 rounded-full  w-3/3"
                         onClick={() => localStorage.setItem("myDataKey", index)}
 
                         //localStorage.setItem('myDataKey', index)

@@ -9,42 +9,42 @@ export default function My_Footer() {
           <div class="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-white hover:text-lime-100">
+              class="text-base leading-6 text-white hover:text-blue-100">
               About
             </a>
           </div>
           <div class="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-white hover:text-lime-100">
+              class="text-base leading-6 text-white hover:text-blue-100">
               Blog
             </a>
           </div>
           <div class="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-white hover:text-lime-100">
+              class="text-base leading-6 text-white hover:text-blue-100">
               Team
             </a>
           </div>
           <div class="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-white hover:text-lime-100">
+              class="text-base leading-6 text-white hover:text-blue-100">
               Pricing
             </a>
           </div>
           <div class="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-white hover:text-lime-100">
+              class="text-base leading-6 text-white hover:text-blue-100">
               Contact
             </a>
           </div>
           <div class="px-5 py-2">
             <a
               href="#"
-              class="text-base leading-6 text-white hover:text-lime-100">
+              class="text-base leading-6 text-white hover:text-blue-100">
               Terms
             </a>
           </div>

@@ -49,12 +49,12 @@ const colors = {
   blue: "bg-blue-50 text-blue-500",
   orange: "bg-orange-50 text-orange-500",
   green: "bg-green-50 text-green-500",
-  "blue-gray": "bg-blue-gray-50 text-blue-gray-500",
+  "blue-gray": "bg-blue-gray-50 text-blue-white",
   purple: "bg-purple-50 text-purple-500",
   teal: "bg-teal-50 text-teal-500",
   cyan: "bg-cyan-50 text-cyan-500",
   pink: "bg-pink-50 text-pink-500",
-  lime: "bg-lime-100 text-lime-100",
+  lime: "bg-blue-100 text-blue-100",
 };
 
 // =============================================================================================================
@@ -277,23 +277,23 @@ function NavListMenu() {
               </ListItem>
             </Typography>
             <span
-              className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
+              className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
               aria-hidden="true"
             />
             <span
-              className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
+              className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
               aria-hidden="true"
             />
             <span
-              className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
+              className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
               aria-hidden="true"
             />
             <span
-              className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
+              className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
               aria-hidden="true"
             />
             <span
-              className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-lime-100 to-gray-500 transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
+              className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-blue-100 to-white transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
               aria-hidden="true"
             />
           </button>
@@ -325,23 +325,23 @@ function NavList() {
           </ListItem>
         </Typography>
         <span
-          className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
+          className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
           aria-hidden="true"
         />
         <span
-          className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
+          className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
+          className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
+          className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-lime-100 to-gray-500 transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
+          className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-blue-100 to-white transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
           aria-hidden="true"
         />
       </button>
@@ -359,23 +359,23 @@ function NavList() {
           </ListItem>
         </Typography>
         <span
-          className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
+          className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
           aria-hidden="true"
         />
         <span
-          className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
+          className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
+          className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
+          className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-lime-100 to-gray-500 transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
+          className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-blue-100 to-white transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
           aria-hidden="true"
         />
       </button>
@@ -392,23 +392,23 @@ function NavList() {
           </ListItem>
         </Typography>
         <span
-          className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
+          className="absolute -bottom-1 -top-1 -right-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-20 duration-200 origin-top group-hover:scale-3d-111 group-hover:delay-100 group-hover:duration-200 group-hover:origin-bottom"
           aria-hidden="true"
         />
         <span
-          className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
+          className="absolute -top-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform delay-200 duration-150 ease-linear origin-left group-hover:scale-3d-111 group-hover:delay-200 group-hover:duration-150 group-hover:origin-right"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
+          className="absolute -bottom-1 -top-1 -left-1 w-1 bg-gradient-to-br from-blue-100 to-white scale-3d-101 transition-transform delay-350 duration-150 ease-linear origin-bottom group-hover:scale-3d-111 group-hover:delay-350 group-hover:duration-200 group-hover:origin-top"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-lime-100 to-gray-500 scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
+          className="absolute -bottom-1 -left-1 -right-1 h-1 bg-gradient-to-br from-blue-100 to-white scale-3d-011 transition-transform duration-100 origin-right group-hover:scale-3d-111 group-hover:delay-500 group-hover:duration-500 group-hover:origin-left"
           aria-hidden="true"
         />
         <span
-          className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-lime-100 to-gray-500 transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
+          className="absolute -bottom-1 left-3.5 right-3.5 h-1 bg-gradient-to-br from-blue-100 to-white transition-after-14 origin-left group-hover:scale-3d-011 group-hover:-right-1 group-hover:-left-1 group-hover:origin-right group-hover:transition-after-h-14"
           aria-hidden="true"
         />
       </button>
@@ -432,7 +432,7 @@ export default function My_Navbar1() {
     <>
       <Navbar
         style={{ backgroundColor: "#000d1a" }}
-        className="mx-auto max-w-screen-xl px-4 py-2">
+        className="shadow-lg mx-auto max-w-screen-xl px-4 py-2">
         <div className="flex items-center justify-between text-blue-gray-900">
           <div className="hidden lg:block">
             <NavList />
@@ -448,11 +448,10 @@ export default function My_Navbar1() {
           <div className="hidden gap-4 lg:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 mt-1"
+              class="h-6 w-6 mt-1 cursor-pointer text-blue-100 hover:fill-red-700 hover:text-red-700"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-              style={{ color: "#f0f4c3" }}>
+              stroke="currentColor">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -462,11 +461,10 @@ export default function My_Navbar1() {
             {/* <Link to="/cart"> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 mt-1 cursor-pointer"
+              class="h-6 w-6 mt-1 cursor-pointer text-blue-100"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              style={{ color: "#f0f4c3" }}
               onClick={() => setShowCart(true)}>
               <path
                 stroke-linecap="round"
@@ -488,11 +486,10 @@ export default function My_Navbar1() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 cursor-pointer mt-1"
+                class="h-6 w-6 cursor-pointer mt-1 text-blue-100"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                style={{ color: "#f0f4c3" }}
                 onClick={() => loginWithRedirect()}>
                 <path
                   stroke-linecap="round"
@@ -506,9 +503,7 @@ export default function My_Navbar1() {
           </div>
           <IconButton
             variant="text"
-            color="blue-gray"
-            className="lg:hidden"
-            style={{ color: "#f0f4c3" }}
+            className="text-blue-100 lg:hidden"
             onClick={() => setOpenNav(!openNav)}>
             {openNav ? (
               <XIcon className="h-6 w-6" strokeWidth={2} />
@@ -523,7 +518,7 @@ export default function My_Navbar1() {
             <Button variant="gradient" size="sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 text-blue-100 hover:fill-red-700 hover:text-red-700"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -537,7 +532,7 @@ export default function My_Navbar1() {
             <Button variant="gradient" size="sm">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
+                class="h-6 w-6 text-blue-100"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -556,7 +551,7 @@ export default function My_Navbar1() {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 hover:text-gray-200"
+                  class="h-6 w-6 text-blue-100"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
